@@ -1,0 +1,429 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "id": "f12ede7f",
+   "metadata": {},
+   "source": [
+    "### set and tuple\n",
+    "* tuple is like list\n",
+    "* tuple is collection of an items\n",
+    "* it is immutable ---- con't change the an items\n",
+    "* in tuple we can pass the multiple data types"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 14,
+   "id": "1cb4e084",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "tuple"
+      ]
+     },
+     "execution_count": 14,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "a=(1,2,3)\n",
+    "a.count(a)\n",
+    "type(a)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 24,
+   "id": "d71afa75",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "t=(1,1,1,2,2,2,3,3,)\n",
+    "t.count(2)\n",
+    "\n",
+    "\n",
+    "a=(1,2,'ashu',)\n",
+    "a.count('ashu') \n",
+    "\n",
+    "\n",
+    "l=(10,20,30,40,50)\n",
+    "tuple(l)\n",
+    "t=tuple(l)\n",
+    "l=list(t)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 27,
+   "id": "d6f71654",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "['__and__',\n",
+       " '__class__',\n",
+       " '__contains__',\n",
+       " '__delattr__',\n",
+       " '__dir__',\n",
+       " '__doc__',\n",
+       " '__eq__',\n",
+       " '__format__',\n",
+       " '__ge__',\n",
+       " '__getattribute__',\n",
+       " '__gt__',\n",
+       " '__hash__',\n",
+       " '__iand__',\n",
+       " '__init__',\n",
+       " '__init_subclass__',\n",
+       " '__ior__',\n",
+       " '__isub__',\n",
+       " '__iter__',\n",
+       " '__ixor__',\n",
+       " '__le__',\n",
+       " '__len__',\n",
+       " '__lt__',\n",
+       " '__ne__',\n",
+       " '__new__',\n",
+       " '__or__',\n",
+       " '__rand__',\n",
+       " '__reduce__',\n",
+       " '__reduce_ex__',\n",
+       " '__repr__',\n",
+       " '__ror__',\n",
+       " '__rsub__',\n",
+       " '__rxor__',\n",
+       " '__setattr__',\n",
+       " '__sizeof__',\n",
+       " '__str__',\n",
+       " '__sub__',\n",
+       " '__subclasshook__',\n",
+       " '__xor__',\n",
+       " 'add',\n",
+       " 'clear',\n",
+       " 'copy',\n",
+       " 'difference',\n",
+       " 'difference_update',\n",
+       " 'discard',\n",
+       " 'intersection',\n",
+       " 'intersection_update',\n",
+       " 'isdisjoint',\n",
+       " 'issubset',\n",
+       " 'issuperset',\n",
+       " 'pop',\n",
+       " 'remove',\n",
+       " 'symmetric_difference',\n",
+       " 'symmetric_difference_update',\n",
+       " 'union',\n",
+       " 'update']"
+      ]
+     },
+     "execution_count": 27,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "a={1,2,3,4}\n",
+    "type(a)\n",
+    "dir(a)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 44,
+   "id": "d6cd25ff",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[1, 2, 3, 8]\n",
+      "[10, 20, 'hello', 20.6]\n"
+     ]
+    },
+    {
+     "data": {
+      "text/plain": [
+       "10"
+      ]
+     },
+     "execution_count": 44,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "a=[1,2,3]\n",
+    "a.append(8)\n",
+    "print(a)\n",
+    "\n",
+    "\n",
+    "ammu = {}\n",
+    "ammu\n",
+    "\n",
+    "\n",
+    "animals = ['dog','cat','monkey']\n",
+    "animals[1]\n",
+    "\n",
+    "list = [10,20,'hello',20.6]\n",
+    "print(list)\n",
+    "list[2]\n",
+    "\n",
+    "list2 = [[10,20],[30,40]]\n",
+    "list2[1][0]\n",
+    "list2[0][0]\n",
+    "\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "72e2eee3",
+   "metadata": {},
+   "source": [
+    "# list operations\n",
+    "* Replace\n",
+    "* delete\n",
+    "* insert\n",
+    "* append\n",
+    "* sort\n",
+    "* reverse"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 57,
+   "id": "0997b225",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "['apple', 'graps', 'banana']"
+      ]
+     },
+     "execution_count": 57,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "list1 = [10,20,30,50]\n",
+    "list1[2]=3.5\n",
+    "list1\n",
+    "\n",
+    "\n",
+    "list1.insert(2,'ashu')\n",
+    "list1\n",
+    "\n",
+    "animals = ['monkey','dog','cat']\n",
+    "animals.sort()\n",
+    "animals\n",
+    "\n",
+    "\n",
+    "animals = ['cat','dog']\n",
+    "animals.append('monkey')\n",
+    "animals\n",
+    "\n",
+    "\n",
+    "animals.reverse()\n",
+    "animals\n",
+    "\n",
+    "\n",
+    "\n",
+    "fruits = ['apple','mango']\n",
+    "fruits[1] = 'graps'\n",
+    "fruits\n",
+    "fruits.append('banana')\n",
+    "fruits\n",
+    "\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 72,
+   "id": "c53ce108",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "' hello welcome to ongole '"
+      ]
+     },
+     "execution_count": 72,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "# Difference b/w list and tuple\n",
+    "string = ('dog','cat','monkey')\n",
+    "string\n",
+    "\n",
+    "string1 = \" hello welcome to ongole \"\n",
+    "string1\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 88,
+   "id": "90a27b08",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "' ashu yes papa  eating suger no papa telling lise no papa open your moth hahaaaa'"
+      ]
+     },
+     "execution_count": 88,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "string1 = \" hello welcome to ongole \"\n",
+    "string1.capitalize()\n",
+    "string1\n",
+    "\n",
+    "\n",
+    "\n",
+    "poem =\"\"\" ashu yes papa  eating \\\n",
+    "suger no papa \\\n",
+    "telling lise no papa \\\n",
+    "open your moth hahaaaa\"\"\"\n",
+    "poem.capitalize()\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "6d21ecf7",
+   "metadata": {},
+   "source": [
+    "# *split functiom"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 106,
+   "id": "024c99f5",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'HELLO WELCOME TO ASHU'"
+      ]
+     },
+     "execution_count": 106,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "string1= \"hello welcome to pace collage\"\n",
+    "string1.split()\n",
+    "\n",
+    "\n",
+    "ashu = 'Good morning'\n",
+    "ashu.lower()\n",
+    "ashu.upper()\n",
+    "\n",
+    "ashu.islower()\n",
+    "ashu.isupper()\n",
+    "\n",
+    "ammu = \"hello welcome to ashu\"\n",
+    "ammu.swapcase()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 117,
+   "id": "c84a3fff",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'hello welcome to pace collage'"
+      ]
+     },
+     "execution_count": 117,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "srt1 = 'hello welcome ashu'\n",
+    "str1.replace('ashu','ammu')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 118,
+   "id": "826895a3",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'hello welcome to pace collage'"
+      ]
+     },
+     "execution_count": 118,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "srt1 = 'hello welcome ashu'\n",
+    "str1.replace('ashu','ammu')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "333dad43",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "4f343a60",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.8.8"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
